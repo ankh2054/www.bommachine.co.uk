@@ -1,7 +1,11 @@
 from flask import Flask
 
-# mainpage.py contains 'from app import app'
-# To start using gunicorn - 
-app = Flask(__name__)
 
+# To start using gunicorn - gunicorn app:app
+app = Flask(__name__)
+# Loads the config.py file
+app.config.from_pyfile('config.py', silent=True)
+
+
+# Imports app/routes.py
 from app import routes
