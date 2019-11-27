@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>{{ title }} - BOMmachine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <head>
+  {% block head %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <title>{% block title %}{% endblock %} - BOM Machine</title>
+      <!-- SET: FAVICON -->
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+      <!-- SET: STYLESHEET -->
+       
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap4hack.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!--[if lt IE 9]>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/html5shiv.min.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/IE9.js') }}"></script>
+      <style></style>
+      <![endif]-->
+  {% endblock %}
+   </head>
+   <body>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  </head>
-  <body>
-  
-  <div class="site-wrap">
+    <!-- Set default navigation bar and controls default active_page for active class in NAVBAR and DOTBAR-->
+    {% set navigation_bar = [
+        ('/', 'index', 'Home'),
+        ('/about', 'about', 'About'),
+        ('/contact', 'contact', 'Contact Us')
+    ] -%}
+    {% set active_page = active_page|default('index') -%}
+    <!-- END -->
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-    
-    <header class="site-navbar py-3" role="banner">
-      <div class="container-fluid">
+      <!-- wrapper starts -->
+      <div class="sidemenu"></div>
+       <div class="wrapper">
+           <div 
+           {% if title == 'Home' %}class="dots"
+           {% elif title == 'About' %} class="dots dots1"
+           {% else %} class="dots"
+           {% endif%}
+           >
 
-        <div class="row align-items-center">
-
-          <div class="col-11 col-xl-2">
-           
-                <a href="#" class="navbar-brand">
-                <!-- Logo Image -->
-                <img src="{{ url_for('static', filename='images/BOM.png') }}"  alt="" class="d-inline-block align-middle mr-2">
-                <!-- Logo Text -->
-                </a>
-          </div>
-
-<!-- Set default navigation bar and controls default active_page for active class -->
-{% set navigation_bar = [
-    ('/', 'index', 'Home'),
-    ('/contact', 'contact', 'Contact Us'),
-    ('/about', 'about', 'About')
-] -%}
-{% set active_page = active_page|default('index') -%}
-<!-- END -->
-
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul id="navigation" class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                  {% for href, id, caption in navigation_bar %}
-                  <li{% if id == active_page %} class="active"{% endif
-                  %}><a href="{{ href|e }}">{{ caption|e }}</a>
-                  </li>
-              {% endfor %}
-              </ul>
-            </nav>
-          </div>
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-{% block content %}{% endblock %}
+           <ul>
+                {% for href, id, caption in navigation_bar %}
+                    <li{% if id == active_page %} class="active"{% endif
+                    %}><a href="{{ href|e }}">&nbsp;</a>
+                    </li>
+                {% endfor %}
+               </ul>
+           </div>
 
 
-
-
-
-      
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h2 class="footer-heading text-uppercase mb-4">About Us</h2>
-            <p>Bitcoin Mining | Security | Automation | ASIC</p>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
-            <p>
-              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          
-            <div class="col-md-12 text-center">
-              <div class="border-top pt-5">
-              <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | BOMmachine <i class="icon-heart text-primary" aria-hidden="true"></i> BTC
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
+            <div class="numbers d-flex flex-wrap">
+              
+               <strong>
+                {% if title == 'Home' %} 01
+                {% elif title == 'About' %} 02
+                {% else %} 03
+                {% endif %}
+               </strong>
+                <small>/</small>
+                <span>03</span>
             </div>
+       <!--header start-->
+           <header>
+           <!--menu-->
+               <div class="header-in">
+                    <div class="menu">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                        </div>
+               <div class="container">
+                   <div class="header-dtls d-flex flex-wrap">
+          
+               <div class="logo">
+               <a href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" width="193" height="64" alt="img"></a>
+               </div>
+
+               <nav class="ml-auto">
+               <ul class="d-flex flex-wrap">
+                {% for href, id, caption in navigation_bar %}
+                    <li{% if id == active_page %} class="active"{% endif
+                    %}><a href="{{ href|e }}">{{ caption|e }}</a>
+                    </li>
+                {% endfor %}
+                   </ul>
+               </nav>
+                     </div>
+               </div>
+               </div>
+
+           </header>
+
+        <div class="main-content">
+          <div class="invest">
+          {% block content %}{% endblock %}
           </div>
         </div>
-      </div>
-    </footer>
-    
-  </div>
 
 
-  <script href="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/popper.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/aos.js') }}"></script>
-  <script href="{{ url_for('static', filename='js/main.js') }}"></script>
+          {% block footer %}
+          <footer>
+           <div class="container">
+               <div class="footer-in">
+               <ul class="d-flex flex-wrap">
+                   <li class="col-md-4">
+                   <div class="footer-links">
+                       <h4>ABOUT US</h4>
+                       <ul class="d-flex flex-wrap asi">
+                       <li class="col-6"><a href="#">Bitcoin Mining</a></li>
+                       <li class="col-6"><a href="#">Security</a></li>
+                       <li class="col-6"><a href="#">Automation</a></li>
+                       <li class="col-6"><a href="#">ASIC</a></li>
+                       </ul>
+                    </div>
+                   </li>
+                   <li class="col-md-4">
+                    <div class="footer-links">
+                       <h4>QUICK LINKS</h4>
+                       <ul class="quicks">
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Contact Us</a></li>
+                 
+                       </ul>
+                    </div>
+                   </li>
+                   <li class="col-md-4">
+                   <div class="footer-links">
+                       <h4>CONNECT WITH US</h4>
+                       <ul class="d-flex flex-wrap social-icons">
+                       <li><a href="#"><img src="{{ url_for('static', filename='images/fb.png') }}" width="17" height="31" alt="img"></a></li>
+                       <li><a href="#"><img src="{{ url_for('static', filename='images/twitter.png') }}" width="36" height="29" alt="img"></a></li>
+                       <li><a href="#"><img src="{{ url_for('static', filename='images/youtube.png') }}" width="36" height="25" alt="img"></a></li>
+                       <li><a href="#"><img src="{{ url_for('static', filename='images/instagram.png') }}" width="33" height="33" alt="img"></a></li>
+                 
+                       </ul>
+                    </div>
+                   </li>
+                   </ul>
+               </div>
+               <div class="copyright">
+               <p>Copyright © 2019 All rights reserved   <span> |</span>   BOMmachine <small><img src="{{ url_for('static', filename='images/heart.png') }}" width="16" height="14" alt="img"></small> BTC</p>
+               </div>
+
+               </div>
+               
+           </footer>
+               
+           {% endblock %}
+
+           <div class="fan-img">
+           <figure>
+               <img src="{{ url_for('static', filename='images/fan.png') }}" width="1474" height="1752" alt="img">
+               </figure>
+           </div>
+       </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     
-  </body>
+    
+       <script>
+         //slick slider
+         $(document).ready(function() {
+             $('.menu').click(function(e){
+             $('body').toggleClass('open-menu');
+
+               });
+              $('nav').clone().appendTo('.sidemenu');
+            
+            });
+      </script>
+    </body>
 </html>

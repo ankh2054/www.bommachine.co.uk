@@ -1,0 +1,155 @@
+@media only screen and (max-width:1700px){}
+@media only screen and (max-width:1500px){
+    .menu{left:15px;}  
+    .dots{left:15px;}
+    .numbers{left:15px;}
+      .fan-img.fan-img2{right:0;}
+
+}
+@media only screen and (max-width:1300px){
+      .container{max-width:100%;padding:0 15px;}
+    .header-dtls {padding: 40px 0 30px 85px;}
+    nav ul { margin: 0 -15px;}
+  
+}
+@media only screen and (max-width:1150px){
+  
+   .invest-in {padding: 115px 20px 154px 51px;}
+
+    .footer-in { padding: 100px 0 0 0;}
+    .footer-links ul{padding: 12px 0 0 0;}
+    .monitor-in p br{display:none;}
+    .graph figure img{width:550px;}
+    .graph {  padding: 36px 0 0 0;}
+    .graph.rate figure img{width:875px;}
+    .invest-in h1 {padding: 0 0 30px 0;}
+     h1 { font-size: 58px;line-height: 71px;}
+    h2 { font-size: 53px;line-height: 57px;}
+    p { font-size: 27px;}
+    
+}
+@media only screen and (max-width:1024px){}
+@media only screen and (max-width:991px){
+   nav ul li a { font-size: 22px;}
+    nav ul li { padding: 0 15px;}
+    .invest-in p br{display:none;}
+    .invest-in {  padding: 90px 20px 154px 51px;}
+    .infra-in {padding:85px 0;}
+    h4 {  font-size: 22px;}
+    p {   font-size: 25px;}
+    .monitor-in p{line-height:37px;}
+    .graph figure img { width: 355px;}
+    .graph figure { padding: 0 0 0 25px;}
+    .graph.graph-new figure {  padding: 0 0 0 33px;}
+    .facil-in p { line-height: 45px;}
+    .team-in p br{display:none;}
+    .monitor-in {padding:78px 0;}
+    .monitor-in h2 { padding: 0 0 30px 0;}
+    
+    .graph.rate ul li p{line-height:20px;}
+    .graph.rate ul { padding: 48px 0 0 0;}
+    .footer-links ul li a { font-size: 16.7px;}
+   
+}
+@media only screen and (max-width:767px){
+    h1 {font-size: 54px;line-height: 76px;}
+    .invest-in h1 { padding: 0 0 40px 0;}
+    p { font-size: 27px; line-height: 38px;}
+    .invest-in p {  padding: 0 0 50px 0px;}
+    .invest-in {padding: 90px 20px 87px 51px;}
+    .infra-top ul li a {  font-size: 20px;}
+    .infra-top ul li { padding: 0 14px;}
+    .footer-in > ul > li {  padding: 0 0 40px 0;}
+    .copyright { padding: 15px 0 32px 0;}
+    .dots{top:220px;}
+    .numbers{top:640px;}
+    .numbers strong {  font-size: 32.24px;}
+    .numbers small{padding: 5px 5px 0 5px;}
+    .numbers span {  font-size: 21px;}
+    .graph p {font-size: 14px;}
+    .graph figure img { width: 230px;}
+    .graph ul li {  padding: 0 0 12px 0;}
+.graph figure { padding: 0 0 0 12px;}
+.graph.graph-new { padding: 29px 0 0 0;}
+    .graph.graph-new figure img{width:270px;}
+    .graph.graph-new ul li {padding: 0 0 12px 0;}
+    .graph.rate ul li {padding: 0 0 0 50px;}
+    .facil-in{padding: 43px 0 68px 0;}
+    h2 {font-size: 51px;line-height: 56px;}
+    .facil-in h2 {  padding: 0 0 26px 0;}
+    .team-in {    padding: 46px 0 35px 0;}
+    .footer-in { padding: 66px 0 0 0;}
+    
+     /*--menu--*/
+    nav{display:none;padding:40px 0 0 0;}
+    .logo{margin-left:auto;}
+    nav ul li{width:100%;text-align:center;padding:0 0 30px 0;}
+    .menu{display: block;width:30px;}
+    .sidemenu{display: block;}
+    .sidemenu nav{display: block;}
+    .menu button{padding: 5px;margin:40px 0 0 0;}
+    .menu button span{display: block;}
+    .menu button span.menu-data{margin: 0;}
+    .open-menu .sidemenu{right:0;}
+    .open-menu .wrapper{position: fixed;}
+    .open-menu .sidemenu .header-nav-in ul li{display: block;width:100%;padding: 5px 0;}
+    .open-menu .sidemenu .header-nav-in ul li a{color: #fff;font-size: 13px;line-height: 15px;padding:10px 0;}
+    .open-menu .sidemenu .header-nav-in ul li a.become{width:100%;height:30px;line-height: 11px;display: inline-block;border-radius:0;}
+    .open-menu .sidemenu .header-nav-in ul li a:hover{color: #171718;border-radius: 0;}
+    .header-nav-in{width:100%;}
+    nav{justify-content: flex-end;-webkit-justify-content: flex-end;-ms-justify-content: flex-end;-o-justify-content: flex-end;-ms-justify-content: flex-end;-o-justify-content: flex-end;align-items: center;-webkit-align-items: center;-ms-align-items: center;-o-align-items: center;-moz-align-items: center;}
+    
+}
+@media only screen and (max-width:576px){
+    h1 {  font-size: 50px;  line-height: 56px;}
+    p { font-size: 21px;line-height: 35px;}
+    .invest-in h1 {  padding: 0 0 30px 0;}
+    a.get-btn {width:100%;}
+    input.get-btn {width:100%;}
+    h2 { font-size: 45px;  line-height: 50px;}
+.infra-in {  padding: 58px 0;}
+    .infra-top ul li a { font-size: 16.9px;}
+    .infra-top ul li {   padding: 0 11px;}
+    
+    .infra-top ul li a:after{top: 4px;right: -12px; height: 15px;}
+    .infra-in h2 { padding: 0 0 15px 0;}
+    .graph-in{display: block!important;}
+    .graph figure img { width: 100%; margin: 0 auto;}
+    .graph figure { padding: 0;}
+    .graph.graph-new figure img {   width: 100%; margin: 0 auto;}
+    .graph.graph-new figure {padding: 0;}
+    .graph.rate ul li {padding: 0 0 0 12px;}
+    .graph.rate ul li p {padding: 0 0 0 15px;}
+    .facil-in p {line-height: 37px;}
+    h3 {font-size: 23px;line-height: 23px;}
+    h4 { font-size: 19px;}
+    .team-in h6{font-size: 21px; line-height: 25px;} 
+    .team-in h3 { padding: 37px 0 4px 0;}
+    p { font-size: 18px;}
+    .numbers strong {font-size: 23.24px;}
+    .numbers span {  font-size: 16px;}
+    .numbers small { font-size: 24px;}
+    .numbers small { padding: 5px 3px 0 4px;}
+
+
+}
+@media only screen and (max-width:479px){
+    .logo a img{width: 150px;}
+    .invest-in {padding: 45px 0px 87px 34px;}
+    a.get-btn{font-size: 16px; line-height: 62px;height: 62px;}
+    input.get-btn{font-size: 16px; line-height: 62px;height: 62px;}
+    h2 { font-size: 32px; line-height: 41px;}
+    .infra-top ul li {  padding: 0 11px 10px;}
+    .infra-icons ul li { padding: 0 0 20px 0;}
+    
+    .footer-links > ul.asi > li{-ms-flex: 0 0 100%;-webkit-flex: 0 0 100%;
+    flex: 0 0 100%; max-width: 100%;}
+    .footer-links ul.asi li a:after{display:none;}
+    .footer-in { padding: 45px 0 0 0;}
+    .menu{top: 45px;}
+    .dots ul li.active a { width: 25px; height: 25px;}
+     h1 { font-size: 40px; line-height: 42px;}
+    .numbers { top: 586px;}
+    .graph.rate ul li { padding: 0 0 15px 0;}
+    
+}

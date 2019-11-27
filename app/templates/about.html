@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% set active_page = "about" %}
+{% block content %}
+
+               <div class="container">
+               <div class="invest-in">
+                   <h1>About Us</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore.</p>
+                   <a href="#" class="get-btn">Get in Touch to Invest</a>
+                   
+                   </div>
+                   <figure>
+                   <img src="{{ url_for('static', filename='images/divide-line1.png') }}" width="1131" height="27" alt="img">
+                   </figure>
+               </div>
+               
+               </div>
+               <div class="monitor">
+               <div class="container">
+                   
+                   <div class="monitor-in">
+                   <h2>Infrastructure</h2>
+                       <p>Fully monitored and automated controls to maximise mining efficiency.</p>
+                       <p>Automated Devops Inspired Infrastructure to minimize human interaction <br> and maximise profit.</p>
+                       <p>We utilise the latest S17+ and T17+ ASIC miners from Bitmain.</p>
+                       <div class="graph">
+                           <h6>Fan RPM</h6>
+                           <ul>
+                           <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 01 FAN1</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line1.png') }}" width="632" height="36" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">3.70K rpm</p>
+                            
+                           </div>  
+                               </li>
+                                <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 02 FAN1</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line2.png') }}" width="632" height="29" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">3.45K rpm</p>
+                            
+                           </div>  
+                               </li>
+                                <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 01 FAN2</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line3.png') }}" width="632" height="36" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">3.98K rpm</p>
+                            
+                           </div>  
+                               </li>
+                                <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 02 FAN2</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line4.png') }}" width="632" height="36" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">2.82K rpm</p>
+                            
+                           </div>  
+                               </li>
+                                <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 01 FAN3</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line5.png') }}" width="632" height="36" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">3.00K rpm</p>
+                            
+                           </div>  
+                               </li>
+                                <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Fans RPM 02 FAN3</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/line6.png') }}" width="632" height="36" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">3.68K rpm</p>
+                            
+                           </div>  
+                               </li>
+                             
+                           </ul>
+                          
+                       
+                       </div>
+                         <div class="graph graph-new">
+                           <h6>Temperature</h6>
+                           <ul>
+                           <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 01 TEMP1</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line1.png') }}" width="629" height="10" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">43</p>
+                            
+                           </div>  
+                               </li>
+                               <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 02 TEMP1</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line2.png') }}" width="629" height="11" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">57</p>
+                            
+                           </div>  
+                               </li>
+                               <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 01 TEMP2</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line3.png') }}" width="629" height="11" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">52</p>
+                            
+                           </div>  
+                               </li>
+                               <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 02 TEMP2</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line4.png') }}" width="629" height="11" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">37</p>
+                            
+                           </div>  
+                               </li>
+                             <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 01 TEMP3</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line5.png') }}" width="629" height="11" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">80</p>
+                            
+                           </div>  
+                               </li>
+                               <li>
+                               <div class="graph-in d-flex flex-wrap align-items-center">
+                          
+                               <p>Antiminer Temp 02 TEMP3</p>
+                              
+                               <figure>
+                               <img src="{{ url_for('static', filename='images/new-line6.png') }}" width="629" height="10" alt="img">
+                               </figure>
+                              
+                               <p class="ml-auto">93</p>
+                            
+                           </div>  
+                               </li>
+                           </ul>
+                          
+                       
+                       </div>
+                       <div class="graph rate">
+                           <h6>Hashrate</h6>
+                          <figure>
+                           <img src="{{ url_for('static', filename='images/graph.png') }}" width="875" height="415" alt="img">
+                           </figure> 
+                          <ul class="d-flex flex-wrap justify-content-center">
+                           <li><a href="#" class="ble"></a><p>Antiminer Hashrate 01      </p></li>
+                               <li><a href="#"></a><p>Antiminer Hashrate 02</p></li>
+                           </ul>
+                    
+                       </div>
+                   </div>
+                       <div class="fan-img fan-img2">
+           <figure>
+               <img src="{{ url_for('static', filename='images/fan3.png') }}" width="985" height="1217" alt="img">
+               </figure>
+           </div>
+                    <figure>
+                   <img src="{{ url_for('static', filename='images/divide-line1.png') }}" width="1131" height="27" alt="img">
+                   </figure>
+                   </div>
+               </div>
+               <div class="facility">
+               <div class="container">
+                   <div class="facil-in">
+                   <h2>Facilities</h2>
+                       <p>
+                           Fully Secure Comms room facilities with environmental controls <br>
+                       Multi Location with redundant power and internet <br>
+                           We utilise the latest S17+ and T17+ ASIC miners from Bitmain.
+                       </p>
+                       <figure>
+                       <img src="{{ url_for('static', filename='images/illustartor.png') }}" width="791" height="566" alt="img">
+                       </figure>
+                   </div>
+                    <figure>
+                   <img src="{{ url_for('static', filename='images/divide-line1.png') }}" width="1131" height="27" alt="img">
+                   </figure>
+                   </div>
+               </div>
+               <div class="team">
+               <div class="container">
+                   <div class="team-in">
+                   <h2>Our Team</h2>
+                       <figure>
+                       <img src="{{ url_for('static', filename='images/person.png') }}" width="412" height="436" alt="img">
+                       </figure>
+                       <h3>Charles Holtzkampf</h3>
+                       <h6>Founder</h6>
+                       <ul class="d-flex flex-wrap align-items-center justify-content-center">
+                       <li>
+                           <a href="#"><img src="{{ url_for('static', filename='images/twitter.png') }}" width="36" height="29" alt="img"></a>
+                           </li> 
+                             <li>
+                           <a href="#"><img src="{{ url_for('static', filename='images/linked.png') }}" width="35" height="33" alt="img"></a>
+                           </li> 
+                       </ul>
+                       <p>Charles Holtzkampf is the founder and leads the technological development and mining strategies.<br> Before the world of blockchain, Charles was CTO at Avanta a leading service office provider in London, <br> with 40 Fully Serviced Offices wordlwide including India. He then founded EOS42 who became <br> a founding Block producer on the EOS blockchain and launched Chintai, the first utility resource <br> exchange. </p>
+<p>
+He currently serves as a member of GhostbustersX who leads the blockchain development for <br> Liberland. Charles drives all the technical innovations and operations at BOMmachine. He has been <br> in the Blockchain space for over nine years and has been mining Bitcoin since 2013.</p>
+                   </div>
+                    <figure>
+                   <img src="{{ url_for('static', filename='images/divide-line1.png') }}" width="1131" height="27" alt="img">
+                   </figure>
+                   </div>
+                 <!--/div-->
+
+           
+  {% endblock %}
+  
