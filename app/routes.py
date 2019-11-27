@@ -4,7 +4,7 @@ from app import app
 from app.forms import ContactForm
 import requests
 # Import additional functions from functions.py
-from app.functions import btcprice
+# from app.functions import btcprice
 
 
 
@@ -18,8 +18,8 @@ mailgun_url = 'https://api.mailgun.net/v3/sandbox773b6264f055401b8ae8e10b51aa68d
 @app.route('/')
 @app.route('/index')
 def index():
-     price = btcprice()
-     return render_template('index.html', title='Home', price=price)
+     
+     return render_template('index.html', title='Home')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
