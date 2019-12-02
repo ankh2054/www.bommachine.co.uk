@@ -31,7 +31,7 @@ h5 {font-size: 32px;line-height: 40px;font-weight:700;}
 h6 {font-size:24px;line-height:30px;color:#fff;font-weight:600;margin: 0;}
 /*---------------------------------------------------*/
 html{min-height:100%;}
-body{color:#171718;font-family: 'Montserrat', sans-serif;font-size:12px;font-weight:400;background:url(../images/bg1.png)no-repeat;height:auto;min-height:100%;background-size:cover;}
+body{color:#171718;font-family: 'Montserrat', sans-serif;font-size:12px;font-weight:400;background:url(../images/bg1.png)no-repeat;height:auto;min-height:100%;background-size:cover;background-position:center center;}
 body.inner-body{background:url(../images/bg2.png)no-repeat;height: auto;background-size:cover;}
 .flt_lt {float:left; display:inline;}
 .flt_rt {float:right; display:inline;}
@@ -132,6 +132,7 @@ footer{}
 .dots ul li:nth-child(2) a:after{top: 16px;height: 102px;}
 .dots.dots1 ul li a:after{height: 100px;top:17px;}
 .dots.dots1 ul li:nth-child(2) a:after{top: 31px;height: 93px;}
+
 
 
 
