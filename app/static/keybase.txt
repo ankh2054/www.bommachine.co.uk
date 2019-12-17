@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/ankh2054
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.bommachine.co.uk
+  * I am ankh2054 (https://keybase.io/ankh2054) on keybase.
+  * I have a public key with fingerprint 5C68 DA85 2344 E591 D952  85EE E1E4 93CC C0C0 B5BD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012021dc1af46cd7cad3cc4d643860cae8c59c5a967217227757b11d402bfcc955800a",
+      "fingerprint": "5c68da852344e591d95285eee1e493ccc0c0b5bd",
+      "host": "keybase.io",
+      "key_id": "e1e493ccc0c0b5bd",
+      "kid": "01011e5b41d6cfed9c6e282eab86f83b55a73ae94f875609342bf3201471628086e50a",
+      "uid": "fecb419fc5e72f8ef18572e19f8d1e19",
+      "username": "ankh2054"
+    },
+    "service": {
+      "hostname": "www.bommachine.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1576527076,
+  "expire_in": 157680000,
+  "prev": "dedc6de2451fce6a00fb009738b092b1e1c7621cea994d764f94baeda4df3514",
+  "seqno": 33,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMN8AnicbZRrUFVVFMe5gDAiJsQQD2vIEwEpwXnt87ggjINWfECcxhFI4M45++wD
+R+Ccy30BItNYqBMajUPTGDmJxu2BQJCiM2gGAhkKowT5CIauSFCoDI+wqIjOJf3W
+pz17zX/91n+tvWZ3r/Xy8DPcHa/p6+ho+9pwrbPO7pHz+/h4OSZqUhlmLMcK0MqB
+CiVktZkKFAkzYjhB4iQhQUKQaQZKLBQkCkJaYmiKY3AoIA4CHgKBZ1iSYEmSZQEr
+EoRE46QoQ8gDwOG4gMVisqLmIYvZoqg2HQsgw0kCB0iKphHgCYkHJAcQQgSieb0A
+xCEuAlHSE/M1qztDNycKVhSnaHpMv5hW7P2P/olvnCAQEGlCYqCMJB4yiORIJIgc
+I3OUCIDAUgLiaZljAYPzFK37pUicoFmCITmcYxBY8W1fwckI6ihehgCxpMwhmeAA
+SyI9wkmEfriFVmRRhSKkqwW1IJ/EAY1VxGJ61KFA5B6su5PHipKSkjhRKyoSYL6i
+ojioxdkLdIbZotk0qBXqinybzWw1ugm2MvNKChJNj2EmUVElfZ56hgNZrIqmYkZC
+V0Kb4qYTgGUAyeIsE4uhUrNiQSZF/S+sPwaOu+sgh46UkAQZCZE0IGSIGAHHZRHH
+eZbiRJwnRb0xyDIkAZHA87TEMrTM06KAJIGWZAoQNOZur1jVMCNF6T6FPJ1pVfJU
+wWa3IKzicme2t4fBz8Nnlad70Tz8Vgc8Wb/aj9YtZ7fmOK9fuDQy8rrRN3X7P47p
+Y/TFyf01HQN5LT3x9x79vCc8MPX9lONBX2SeuPlweiBi4fzBpT/mcpmR/I7ADbOF
+z5iwSu/uH7Zvqjz4cktii092Vvquh9qD5DMByZ8OJvUVfD/Ui2LaN0m3E34Zafmx
+LR4E7nBhxWH7nr8RFTUR+cb6k73R4nywr5JeO7z76kx436oK9csJkNb58eRw/+mK
+W1frljY39Aw2Fj+VdsbmAwbPPvi1O9M+UK2mzn42lVR/3jnfuXgso/itoU8mFwKa
+DJFZEzuNuRvTZgb+Huu679PbFvlueseOCEfw6Fh7P/FdaL3/Fv9rA6+lLV7M8l5T
+HdpDH7rptNxvfvaVW0P3FiaTGtgXtnxun65Eoyn2I7DrQNSapq1BXtXZJ1KwkiMy
+erO3vzc6W8spDTp3+06VMbdyF+WVG7wh1DekKeO34biT1X8t5tSGzRlcc6fqa2Jb
+y9W6U/uTryhXZi4UtXlu/rA1g+gL2XfdrzU45u5R51ikvXnK/0Z86e6uxudOG74N
+dyVkHm9/esq1tvGDoNz1qc1VgaPbqjKb9H8g9XLFsGnjwqxfQoTFNXhoj3Nb4ouX
+jmK9ZQvpf0Z1UrDqpdaF4q/Cti4Tqw+/utQW7dfl/Gm0PVE8vPdRQbavIcahgp1v
+zzuGzUGukIblvZ4xOXfOOg+8E3ru/rpv3vsXPL/Rdw==
+=QO+d
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ankh2054
+
+==================================================================
+

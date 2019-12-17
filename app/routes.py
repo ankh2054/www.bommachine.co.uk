@@ -1,4 +1,4 @@
-from flask import render_template, request, flash
+from flask import render_template, request, flash, send_from_directory
 from app import app
 # Imports ContactForm from app/forms.py
 from app.forms import ContactForm
@@ -47,5 +47,7 @@ def contact():
 def about():
      return render_template('about.html', title='About')
 
-
+@app.route('/keybase.txt')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
