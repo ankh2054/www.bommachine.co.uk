@@ -8,7 +8,7 @@
                <div class="container">
                <div class="invest-in">
                    <h1>Contact Us </h1>
-                   <p>If you would like to contact us about investing or want to enquire about our bespoke ASIC monitoring system. Please use the form below.</p>
+                    <p>If you would like to contact us about investing or want to <br>enquire about our bespoke ASIC monitoring system. <br> Please use the form below.</p>
 
                 </div>
                    <figure>
@@ -24,8 +24,9 @@
     <div class="monitor-in">
     <div class="site-section">
       <div class="container">
+        <h2>Send Us A Message</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 form-container">
 
              
 
@@ -52,12 +53,12 @@
               {% endfor %}
               <!-- Form error messages -->
 
-            <form action="{{ url_for('contact') }}"  method="post">
+            <form action="{{ url_for('contact') }}"  method="post" id="contact-form">
             {{ form.hidden_tag() }}
              
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
+                <div class="col-md-12">
                   
                   {{ form.name(class_="form-control") }}
                 </div>
@@ -88,7 +89,7 @@
               </div>
 
               <div class="row form-group">
-                <div class="col-md-12 text-left">
+                <div class="col-md-12">
                   {{ form.submit(class_="get-btn") }}
                 </div>
               </div>
@@ -97,14 +98,14 @@
   
             </form>
           </div>
-          <div class="col-md-5 ml-auto">
-            <div class="p-4 mb-3">
-              <p class="mb-0 font-weight-bold  text-uppercase mb-3">Address</p>
-              <p class="mb-4 text-secondary">45 Hazlemere Road. Penn, Buckinghamshire, United Kingdom</p>
-              <p class="mb-0 font-weight-bold text-uppercase mb-3">Email Address</p>
-              <p class="mb-0 text-secondary "><a class="bom" href="#">charles@bommachine.co.uk</a></p>
-
-            </div>
+         <div class="col-md-6 ml-auto contact-info">
+              <h5 class="text-uppercase">Address</h5>
+              <img src="static/images/location.png" alt="" class="floating-icon">
+              <p class="mb-4">45 Hazlemere Road. Penn, <br> Buckinghamshire, United Kingdom</p>
+              <h5 class="text-uppercase">Email Address</h5>
+              <img src="static/images/email.png" alt="" class="floating-icon">
+              <p class="mb-0 "><a class="bom" href="mailto: charles@bommachine.co.uk">charles@bommachine.co.uk</a></p>
+          </div>
           </div>
         </div>
       </div>

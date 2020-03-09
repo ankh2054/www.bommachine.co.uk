@@ -26,6 +26,11 @@
      h1 { font-size: 58px;line-height: 71px;}
     h2 { font-size: 53px;line-height: 57px;}
     p { font-size: 27px;}
+
+    .fan-img{display: block;}
+    body{background:url(../images/bg1-mobile.jpg)no-repeat;}
+    body.inner-body{background:url(../images/bg2-mobile.jpg)no-repeat;}
+    body.inner-body2{background:url(../images/bg3-mobile.jpg)no-repeat;}
     
 }
 @media only screen and (max-width:1024px){}
@@ -49,6 +54,9 @@
     .graph.rate ul li p{line-height:20px;}
     .graph.rate ul { padding: 48px 0 0 0;}
     .footer-links ul li a { font-size: 16.7px;}
+
+    .contact-info {text-align: center;}
+    .contact-info p {text-align: left;}
    
 }
 @media only screen and (max-width:767px){
