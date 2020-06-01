@@ -2,3 +2,4 @@ flask
 gunicorn
 flask-wtf
 request
+email_validator
