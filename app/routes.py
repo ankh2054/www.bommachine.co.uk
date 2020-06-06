@@ -51,3 +51,7 @@ def about():
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
+@app.route('/wax.json')
+def static_from_root2():
+    return send_from_directory(app.static_folder, request.path[1:])
+

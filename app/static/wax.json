@@ -1,0 +1,41 @@
+{
+    "producer_account_name": "bommachineio",
+    "org": {
+      "candidate_name": "BOM Machine",
+      "website": "https://www.bommachine.co.uk",
+      "email": "charles@bommachine.co.uk",
+      "branding":{
+        "logo_256": "https://www.bommachine.co.uk/static/images/bommachine_256.png",
+        "logo_1024":"https://www.bommachine.co.uk/static/images/bommachine_1024.png",
+        "logo_svg":"https://www.bommachine.co.uk/static/images/bommachine_256.svg"
+      },
+      "location": {
+        "name": "London",
+        "country": "GB",
+        "latitude": 51.51118829,
+        "longitude": -0.09617353
+      },
+      "social": {
+        "steemit": "bommachineio",
+        "twitter": "BOMmachineio",
+        "facebook": "",
+        "github": "bommachineio",
+        "reddit": "",
+        "keybase": "ankh2054",
+        "telegram": "ankh2054"
+      }
+    },
+    "nodes": [
+      {
+        "location": {
+          "name": "London",
+          "country": "GB",
+          "latitude": 51.51118829,
+          "longitude": -0.09617353
+        },
+        "node_type": "producer",
+        "p2p_endpoint": "p2p.bommachine.co.uk:9882",
+        "api_endpoint": "api.bommachine.co.uk:8882"
+      }
+    ]
+  }
